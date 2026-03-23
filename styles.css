@@ -44,8 +44,8 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-family: 'JetBrains Mono', monospace; 
   font-weight: 500; 
   color: var(--muted); 
-  margin-top: 0.425rem; 
-  font-size: clamp(0.65rem, 2.5vw, 0.75rem); 
+  margin-top: 0.5rem; 
+  font-size: clamp(0.82rem, 3vw, 1rem); 
 }
 
 /* page shell */
