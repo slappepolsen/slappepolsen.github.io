@@ -18,12 +18,12 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
 }
 .banner-img {
   display: block;
-  max-width: min(100%, 920px);
+  max-width: min(100%, 560px);
   width: 100%;
   height: auto;
   margin: 0 auto;
-  border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 .tagline { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: var(--muted); margin-top: 0.85rem; font-size: 1rem; }
 
