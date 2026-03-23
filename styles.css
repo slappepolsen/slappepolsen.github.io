@@ -111,6 +111,44 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: var(--heading-section)
 }
 .drive-link:hover { background: var(--pink-d); color: var(--bg); }
 
+.ship-links--collapse { display: block; }
+.drive-details { border: 0; }
+.drive-details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.drive-details > summary::-webkit-details-marker { display: none; }
+.drive-summary {
+  user-select: none;
+}
+.drive-summary:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+.drive-summary::after {
+  content: " ▼";
+  font-size: 0.75em;
+  opacity: 0.8;
+  margin-left: 0.25rem;
+}
+.drive-details[open] .drive-summary::after { content: " ▲"; }
+.drive-link-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0 0 12px 12px;
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(220,123,179,0.22);
+  border-top: 0;
+}
+.drive-details[open] .drive-summary {
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 0;
+}
+.drive-details:not([open]) .drive-summary { border-radius: 12px; }
+
 /* app */
 .highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; box-shadow: 0 0 0 1px rgba(244,138,50,0.22), 0 0 18px rgba(244,138,50,0.45), 0 0 36px rgba(220,123,179,0.28); }
 .app-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; margin-bottom: 1rem; color: var(--orange); }
