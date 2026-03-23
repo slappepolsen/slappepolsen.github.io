@@ -14,16 +14,30 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
 
 .site-banner {
   margin: 0;
-  line-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.1;
 }
-.banner-img {
+.site-logo-img {
   display: block;
-  max-width: min(100%, 560px);
-  width: 100%;
+  width: auto;
   height: auto;
-  margin: 0 auto;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  max-width: min(180px, 40vw);
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+}
+.archive-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(0.95rem, 3.5vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: 0.45em;
+  text-indent: 0.45em;
+  color: var(--light-orange);
+  text-transform: uppercase;
 }
 .tagline { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: var(--muted); margin-top: 0.85rem; font-size: 1rem; }
 
