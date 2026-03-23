@@ -20,15 +20,22 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   gap: 0.5rem;
   line-height: 1.1;
 }
-.site-logo-img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: min(180px, 40vw);
-  max-height: 180px;
-  object-fit: contain;
+/* Viewport is 1:2 (half as wide as tall) = visible region is center 50% width of square logo */
+.logo-crop {
+  height: min(200px, 46vw);
+  width: min(100px, 23vw);
+  overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  flex-shrink: 0;
+}
+.site-logo-img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  /* Square asset: shift left by 25% of image width so middle half fills the crop */
+  transform: translateX(-25%);
 }
 .archive-title {
   font-family: 'JetBrains Mono', monospace;
