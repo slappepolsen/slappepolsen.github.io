@@ -17,7 +17,7 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-size: 1.6rem;
   font-weight: 700;
   padding: 10px 20px;
-  background: linear-gradient(to right, var(--red) 0%, var(--orange) 20%, var(--light-orange) 33%, white 50%, var(--pink) 66%, var(--purple) 80%, var(--dark-pink) 100%);
+  background: linear-gradient(to right, var(--red) 0%, var(--orange) 18%, var(--light-orange) 30%, white 50%, var(--pink) 70%, var(--purple) 82%, var(--dark-pink) 100%);
   color: white;
   -webkit-text-stroke: 3px #2a2420;
   paint-order: stroke fill;
@@ -25,7 +25,7 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   display: inline-block;
   box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
 }
-.tagline { font-family: 'JetBrains Mono', monospace; font-style: italic; color: var(--muted); margin-top: 0.5rem; font-size: 1rem; }
+.tagline { font-family: 'JetBrains Mono', monospace; font-style: bold; color: var(--muted); margin-top: 0.5rem; font-size: 1rem; }
 
 header { text-align: center; padding: 2.5rem 1.5rem; }
 main { max-width: 850px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
