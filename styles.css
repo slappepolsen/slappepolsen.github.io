@@ -21,7 +21,6 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   gap: 0.25rem;
   line-height: 1.1;
 }
-/* no clip — only caps display width */
 .logo-wrap {
   max-width: min(168px, 38vw);
   flex-shrink: 0;
@@ -34,14 +33,20 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
 }
 .archive-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(0.475rem, 1.75vw, 0.625rem);
+  font-size: clamp(0.6rem, 2.1vw, 0.85rem);
   font-weight: 700;
   letter-spacing: 0.45em;
   text-indent: 0.45em;
   color: var(--orange);
   text-transform: uppercase;
 }
-.tagline { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: var(--muted); margin-top: 0.425rem; font-size: clamp(0.65rem, 2.5vw, 0.75rem); }
+.tagline { 
+  font-family: 'JetBrains Mono', monospace; 
+  font-weight: 500; 
+  color: var(--muted); 
+  margin-top: 0.425rem; 
+  font-size: clamp(0.65rem, 2.5vw, 0.75rem); 
+}
 
 /* page shell */
 header { text-align: center; padding: 1rem 1.25rem 1.25rem; }
