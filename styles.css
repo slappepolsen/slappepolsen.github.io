@@ -84,8 +84,31 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: var(--heading-section)
 .ship-badge {display: inline-flex;align-items: center; gap: 0.3rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.18rem 0.45rem; border: 1.5px solid var(--orange); background: transparent; color: var(--orange); border-radius: 999px; line-height: 1; }
 .ship-badge::before { content: "✦"; font-size: 0.7em; }
 .ship-desc { font-size: 0.9rem; color: var(--muted); margin: 0 0 1rem; }
-.ship-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.drive-link { padding: 0.45rem 1rem; background: rgba(220,123,179,0.2); color: var(--pink); text-decoration: none; border-radius: 12px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+.ship-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.ship-links .ship-badge { grid-column: 1 / -1; justify-self: start; }
+.ship-links > .drive-link:only-child,
+.ship-links > .ship-badge ~ .drive-link:only-of-type { grid-column: 1 / -1; }
+.drive-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.45rem 1rem;
+  background: rgba(220,123,179,0.2);
+  color: var(--pink);
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
 .drive-link:hover { background: var(--pink-d); color: var(--bg); }
 
 /* app */
