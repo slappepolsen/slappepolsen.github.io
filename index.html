@@ -4,22 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SP Landing</title>
-  <script>
-    (function() {
-      var d = (new URLSearchParams(location.search)).get('design') || 'original';
-      var cfg = {
-        original: { css: 'styles.css', fonts: 'Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600' },
-        retro: { css: 'styles-e.css', fonts: 'JetBrains+Mono:wght@400;500;600;700' },
-        brutalist: { css: 'styles-brutalist-6.css', fonts: 'JetBrains+Mono:wght@400;600' }
-      };
-      var c = cfg[d] || cfg.original;
-      var pre = document.createElement('link'); pre.rel = 'preconnect'; pre.href = 'https://fonts.googleapis.com'; document.head.appendChild(pre);
-      pre = document.createElement('link'); pre.rel = 'preconnect'; pre.href = 'https://fonts.gstatic.com'; pre.crossOrigin = 'anonymous'; document.head.appendChild(pre);
-      var css = document.createElement('link'); css.rel = 'stylesheet'; css.href = c.css; document.head.appendChild(css);
-      var fnt = document.createElement('link'); fnt.rel = 'stylesheet'; fnt.href = 'https://fonts.googleapis.com/css2?family=' + c.fonts + '&display=swap'; document.head.appendChild(fnt);
-    })();
-  </script>
-  <noscript><link rel="stylesheet" href="styles.css"><link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="styles-e.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -79,7 +67,11 @@
           <div class="ship-content">
             <h3>Roxane x Sara <span class="ship-meta">🇫🇷 Demain nous appartient (2020–ongoing)</span></h3>
             <div class="ship-links">
-              <a href="https://drive.google.com/drive/folders/1t_gQdg9Mhz1Ly59JajffHhq24jiy0v29" class="drive-link" target="_blank" rel="noopener">Google Drive</a>
+              <a href="https://drive.google.com/drive/u/5/folders/1diksIqbkgUzxgyTc0QwGzxMrto0zjou2" class="drive-link" target="_blank" rel="noopener">Start (eps 632-1330)</a>
+              <a href="https://drive.google.com/drive/u/5/folders/1KJTfgGr6PJChS2Y0EFQhUF4gZ69anzTd" class="drive-link" target="_blank" rel="noopener">Eps 1331-1636</a>
+              <a href="https://drive.google.com/drive/u/5/folders/1EneAk29c0duD5KR3u5atwDvj4R58VdaF" class="drive-link" target="_blank" rel="noopener">Eps 1637-1956</a>
+              <a href="https://drive.google.com/drive/u/5/folders/1H8QeHTMH8fcSukjvWxzI3VFJ0Y5z62Vg" class="drive-link" target="_blank" rel="noopener">Eps 1957-2147</a>
+              <a href="https://drive.google.com/drive/u/5/folders/1pUuwDYg0fLdz8GgdOcMj-SrX4BvqmKPq" class="drive-link" target="_blank" rel="noopener">Eps 2148-ongoing</a>
             </div>
           </div>
         </article>
@@ -163,7 +155,7 @@
   </main>
 
   <footer>
-    <p>Built with ❤️ · Hosted on GitHub Pages · <a href="designs.html">View all designs</a></p>
+    <p>Built with ❤️ · Hosted on GitHub Pages</p>
   </footer>
 </body>
 </html>
