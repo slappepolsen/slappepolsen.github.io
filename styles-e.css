@@ -58,7 +58,7 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: var(--l
 .drive-link { padding: 0.45rem 1rem; background: rgba(220,123,179,0.2); color: var(--pink); text-decoration: none; border-radius: 12px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
 .drive-link:hover { background: var(--pink-d); color: var(--bg); }
 
-.highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; }
+.highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; box-shadow: 0 0 22px rgba(220,123,179,0.22); }
 .app-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; margin-bottom: 1rem; color: var(--light-orange); }
 .app-content p, .app-content ul { color: var(--muted); margin-bottom: 1rem; }
 .app-content ul { padding-left: 1.25rem; }
