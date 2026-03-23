@@ -50,7 +50,9 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: var(--l
 .ship-content { padding: 1.25rem; }
 .ship-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin: 0 0 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .ship-meta { color: var(--muted); font-size: 0.85rem; }
-.ship-badge { font-size: 0.7rem; padding: 0.25rem 0.5rem; background: var(--orange); color: var(--bg); border-radius: 8px; font-weight: 600; }
+.ship-badge {display: inline-flex;align-items: center; gap: 0.3rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.18rem 0.45rem; border: 1.5px solid var(--orange); background: transparent; color: var(--orange); border-radius: 999px; line-height: 1; }
+.ship-badge::before { content: "✦"; font-size: 0.7em; }
+/* .ship-badge { font-size: 0.7rem; padding: 0.25rem 0.5rem; background: var(--orange); color: var(--bg); border-radius: 8px; font-weight: 600; } */
 .ship-desc { font-size: 0.9rem; color: var(--muted); margin: 0 0 1rem; }
 .ship-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .drive-link { padding: 0.45rem 1rem; background: rgba(220,123,179,0.2); color: var(--pink); text-decoration: none; border-radius: 12px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
