@@ -12,7 +12,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg); color: var(--text); line-height: 1.65; min-height: 100vh; }
 
-/* logo + ARCHIVE */
+/* logo */
 .site-banner {
   margin: 0;
   display: flex;
@@ -21,8 +21,6 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   gap: 0.5rem;
   line-height: 1.1;
 }
-
-/* logo-wide.png; intrinsic ratio, no crop */
 .logo-crop {
   max-width: min(420px, 92vw);
   overflow: hidden;
@@ -41,7 +39,7 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-weight: 700;
   letter-spacing: 0.45em;
   text-indent: 0.45em;
-  color: var(--light-orange);
+  color: var(--orange);
   text-transform: uppercase;
 }
 .tagline { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: var(--muted); margin-top: 0.85rem; font-size: 1rem; }
@@ -49,7 +47,7 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
 /* page shell */
 header { text-align: center; padding: 2rem 1.25rem 2.5rem; }
 main { max-width: 850px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-h2 { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: var(--light-orange); margin-bottom: 0.75rem; }
+h2 { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: var(--orange); margin-bottom: 0.75rem; }
 .section-intro { color: var(--muted); margin-bottom: 1.5rem; }
 .section { margin-bottom: 2.5rem; }
 
@@ -79,22 +77,25 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: var(--l
 .drive-link { padding: 0.45rem 1rem; background: rgba(220,123,179,0.2); color: var(--pink); text-decoration: none; border-radius: 12px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
 .drive-link:hover { background: var(--pink-d); color: var(--bg); }
 
-/* app CTA block */
+/* app */
 .highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; box-shadow: 0 0 0 1px rgba(244,138,50,0.22), 0 0 18px rgba(244,138,50,0.45), 0 0 36px rgba(220,123,179,0.28); }
-.app-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; margin-bottom: 1rem; color: var(--light-orange); }
+.app-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; margin-bottom: 1rem; color: var(--orange); }
 .app-content p, .app-content ul { color: var(--muted); margin-bottom: 1rem; }
 .app-content ul { padding-left: 1.25rem; }
 .app-link { display: inline-block; padding: 0.6rem 1.25rem; background: var(--orange); color: var(--bg); text-decoration: none; font-weight: 600; border-radius: 12px; transition: all 0.2s; box-shadow: 2px 2px 0 rgba(0,0,0,0.2); }
 .app-link:hover { background: var(--orange-d); transform: translate(1px, 1px); box-shadow: 1px 1px 0 rgba(0,0,0,0.2); }
 
-/* about / misc */
+/* about */
 .about-box { background: var(--card); border-radius: 20px; padding: 2rem; border: 2px solid rgba(220,123,179,0.2); }
 .about-box p { color: var(--muted); margin: 0 0 1rem; }
 .about-box p:last-child { margin-bottom: 0; }
+
+/* more */
 .more-box { background: transparent; border: 2px dashed rgba(184,169,154,0.4); border-radius: 20px; padding: 2rem; }
 .more-box p { color: var(--muted); margin: 0; font-style: italic; }
 
+/* footer */
 footer { text-align: center; padding: 2rem; }
 footer p { margin: 0; font-size: 0.9rem; color: var(--muted); }
 
-@media (max-width: 600px) { .ship-grid { grid-template-columns: 1fr; } } /* stack cards */
+@media (max-width: 600px) { .ship-grid { grid-template-columns: 1fr; } }
