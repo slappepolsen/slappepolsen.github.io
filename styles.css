@@ -8,7 +8,7 @@
   --purple: #c46ea1; --dark-pink: #b42075; --dark-pink-d: #991b63;
   --bg: #1f1a18; --card: #2a2420; --text: #f5ebe0; --muted: #b8a99a;
   --heading-section: 1.5rem;
-  --heading-hero: 1.875rem; /* ARCHIVE vs h2: caps + tracking read smaller */
+  --heading-hero: 1.75rem;
   --intro-text: 1rem;
 }
 
