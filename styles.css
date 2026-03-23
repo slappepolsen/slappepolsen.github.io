@@ -25,7 +25,7 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   border-radius: 16px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.35);
 }
-.tagline { font-family: 'JetBrains Mono', monospace; font-style: bold; color: var(--muted); margin-top: 0.85rem; font-size: 1rem; }
+.tagline { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: var(--muted); margin-top: 0.85rem; font-size: 1rem; }
 
 header { text-align: center; padding: 2rem 1.25rem 2.5rem; }
 main { max-width: 850px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
