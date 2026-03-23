@@ -1,0 +1,334 @@
+/* --- Variables (Lesbian flag palette + 15% darker variants) --- */
+:root {
+  --bg: #1a1918;
+  --bg-card: #242221;
+  --bg-card-hover: #2d2b2a;
+  --text: #e8e6e3;
+  --text-muted: #a8a6a3;
+  --border: #3d3b39;
+
+  /* Lesbian flag colors */
+  --flag-red: #df4300;
+  --flag-red-dark: #be3900;
+  --flag-orange: #f48a32;
+  --flag-orange-dark: #cf752b;
+  --flag-light-orange: #ffab68;
+  --flag-light-orange-dark: #d99158;
+  --flag-pink: #dc7bb3;
+  --flag-pink-dark: #bb6998;
+  --flag-purple: #c46ea1;
+  --flag-purple-dark: #a75e89;
+  --flag-dark-pink: #b42075;
+  --flag-dark-pink-dark: #991b63;
+
+  /* Semantic accents */
+  --accent: var(--flag-pink);
+  --accent-dark: var(--flag-pink-dark);
+  --accent-soft: rgba(220, 123, 179, 0.15);
+  --accent-btn: var(--flag-orange);
+  --accent-btn-dark: var(--flag-orange-dark);
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+  font-family: 'Crimson Pro', Georgia, serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* Gradient label (replicates SP Workshop header from app) */
+.gradient-label {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: linear-gradient(to right,
+    #df4300 0%,
+    #f48a32 20%,
+    #ffab68 33%,
+    white 50%,
+    #dc7bb3 66%,
+    #c46ea1 80%,
+    #b42075 100%);
+  /* Outlined text: white fill with black outline for readability */
+  color: white;
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.tagline {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0.25rem 0 0;
+  font-size: 1.1rem;
+}
+
+/* --- Layout --- */
+header {
+  text-align: center;
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 3rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section-intro {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* --- Ship cards --- */
+.ship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.ship-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.ship-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent);
+}
+
+.ship-images {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--bg);
+  min-height: 80px;
+}
+
+.ship-img {
+  width: 100%;
+  max-width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Single image: full width, 16:9 aspect ratio (taller) */
+.ship-card .ship-images .ship-img:only-child {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+}
+
+.ship-card .ship-images:has(.ship-img:only-child) {
+  min-height: 0;
+}
+
+/* Crop awkward compositions to a cleaner area */
+.ship-img-crop-right {
+  object-position: 55% center;
+}
+
+.ship-content {
+  padding: 1rem 1.25rem;
+  flex: 1;
+}
+
+.ship-content h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.ship-meta {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.ship-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.5rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.ship-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.ship-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.drive-link {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.drive-link:hover {
+  background: var(--accent-dark);
+  color: var(--bg);
+}
+
+/* --- App box --- */
+.highlight-section .app-box {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-hover) 100%);
+  border: 1px solid var(--accent-btn);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.app-content p,
+.app-content ul {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.app-content ul {
+  padding-left: 1.25rem;
+}
+
+.app-content li {
+  margin-bottom: 0.35rem;
+}
+
+.app-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent-btn);
+  color: var(--bg) !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.app-link:hover {
+  background: var(--accent-btn-dark);
+}
+
+/* --- About me --- */
+.about-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.about-box p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.about-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- More section --- */
+.more-box {
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.more-box p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  .ship-grid {
+    grid-template-columns: 1fr;
+  }
+}
