@@ -20,8 +20,10 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   line-height: 1.1;
 }
 
-/* Portrait window: square logo + object-fit cover → full height, middle 50% width */
+/* Portrait window: square logo + object-fit cover → full height, middle 50% width.
+   --logo-zoom: uniform scale to eat baked-in PNG padding (letters stay proportional). */
 .logo-crop {
+  --logo-zoom: 1.65;
   width: min(100px, 23vw);
   aspect-ratio: 1 / 2;
   overflow: hidden;
@@ -35,6 +37,8 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(var(--logo-zoom));
+  transform-origin: center center;
 }
 .archive-title {
   font-family: 'JetBrains Mono', monospace;
