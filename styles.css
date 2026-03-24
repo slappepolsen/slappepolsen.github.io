@@ -209,18 +209,6 @@ html.ship-images-off .ship-card .ship-images {
   color: var(--text);
 }
 
-.ship-note {
-  margin: 0.65rem 0 0;
-  font-size: 0.78rem;
-  color: var(--muted);
-  line-height: 1.45;
-}
-.ship-note cite {
-  font-style: normal;
-  font-weight: 600;
-  color: var(--text);
-}
-
 .ship-img--placeholder {
   object-fit: contain;
   background: rgba(0, 0, 0, 0.15);
