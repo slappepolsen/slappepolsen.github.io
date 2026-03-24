@@ -6,7 +6,7 @@
   --orange: #f48a32; --orange-d: #cf752b;
   --light-orange: #ffab68; --pink: #dc7bb3; --pink-d: #bb6998;
   --purple: #c46ea1; --dark-pink: #b42075; --dark-pink-d: #991b63;
-  --bg: #1f1a18; --card: #2a2420; --text: #f5ebe0; --muted: #b8a99a;
+  --bg: #1f1a18; --card: #2a2420; --text: #f5ebe0; --muted: #b8a99a; --muted2: #8a7e72;
   --heading-section: 1.5rem;
   --heading-hero: 1.75rem;
   --intro-text: 1rem;
@@ -57,7 +57,7 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.88rem;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--muted2);
   margin: 1rem auto 0;
   max-width: 34rem;
   line-height: 1.6;
