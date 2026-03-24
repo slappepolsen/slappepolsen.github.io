@@ -8,10 +8,19 @@
   <link rel="icon" href="/images/favicon.png?v=6" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="/images/favicon.png?v=6">
   
-  <link rel="stylesheet" href="styles.css?v=22">
+  <link rel="stylesheet" href="styles.css?v=23">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('sp-archive-ship-images') === '0') {
+          document.documentElement.classList.add('ship-images-off');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <!-- logo -->
@@ -31,6 +40,14 @@
     <section id="ships" class="section">
       <h2>Ships</h2>
       <p class="section-intro">A collection of all the ships I've subbed.</p>
+      <div class="ship-privacy-bar" role="region" aria-label="Ship image visibility">
+        <label class="ship-privacy-toggle" for="toggle-ship-images">
+          <span class="ship-privacy-label">Show photos on ship cards</span>
+          <input type="checkbox" id="toggle-ship-images" class="ship-privacy-input" checked aria-describedby="ship-privacy-hint">
+          <span class="ship-privacy-switch" aria-hidden="true"></span>
+        </label>
+        <p id="ship-privacy-hint" class="ship-privacy-hint">Turn off for a text-only list when you’re on transit, at work, or anywhere you’d rather not have scene stills on screen. Your choice is remembered on this device.</p>
+      </div>
       <div class="ship-grid">
         <article class="ship-card">
           <div class="ship-images">
@@ -146,11 +163,11 @@
       <div class="app-box">
         <div class="app-content">
           <h3>SP Workshop</h3>
-          <p>I made one of my childhood dreams come true: I made a free and open-source app! <strong>SP Workshop</strong> helps you easily sub the scenes of your favorite ship. You don't need to know complex tools or the command line. Just install it, open it, and click buttons.</p>
+          <p>I made one of my childhood dreams come true: I made a <strong>free and open-source app</strong>! <strong>SP Workshop</strong> helps you easily sub the scenes of your favorite ship. You don't need to know complex tools or the command line. Just install it, open it, and click buttons.</p>
           <ul>
             <li>Pull subtitles out of video files and <strong>translate</strong> them into another language</li>
             <li><strong>Burn-in</strong> subtitles back into the video so they permanently show on screen</li>
-            <li><strong>Download episodes in batches</strong> from streaming sources (works for Carlice, Roxara, and way more)</li>
+            <li><strong>Download episodes in batches</strong> from streaming sources (works for Loquinha, Carlice, Roxara, and way more)</li>
             <li><strong>Auto-transcription</strong>, that is, make subtitles from audio when there are none</li>
           </ul>
           <a href="https://github.com/slappepolsen/sp-workshop" class="app-link" target="_blank" rel="noopener">
@@ -178,6 +195,28 @@
     </section>
   </main>
 
+
+  <script>
+    (function () {
+      var KEY = 'sp-archive-ship-images';
+      var root = document.documentElement;
+      var input = document.getElementById('toggle-ship-images');
+      if (!input) return;
+      function setImagesVisible(visible) {
+        root.classList.toggle('ship-images-off', !visible);
+        input.checked = visible;
+      }
+      var stored = localStorage.getItem(KEY);
+      if (stored !== null) {
+        setImagesVisible(stored === '1');
+      }
+      input.addEventListener('change', function () {
+        var on = input.checked;
+        setImagesVisible(on);
+        localStorage.setItem(KEY, on ? '1' : '0');
+      });
+    })();
+  </script>
   <!-- footer -->
   <footer>
     <p>Built with ❤️ · Hosted on GitHub Pages</p>
