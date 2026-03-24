@@ -129,13 +129,6 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: var(--heading-section)
   transform: translate(1.25rem, -50%);
   background: var(--orange);
 }
-.ship-privacy-hint {
-  margin: 0.65rem 0 0;
-  font-size: 0.82rem;
-  color: var(--muted);
-  line-height: 1.55;
-}
-
 html.ship-images-off .ship-card .ship-images {
   display: none;
 }
