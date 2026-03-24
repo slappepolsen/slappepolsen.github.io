@@ -168,9 +168,9 @@ html.ship-images-off .ship-card .ship-images {
   gap: 0.5rem;
 }
 .ship-links .ship-badge { grid-column: 1 / -1; justify-self: start; }
-.ship-links > .drive-link:only-child,
-.ship-links > .ship-badge ~ .drive-link:only-of-type { grid-column: 1 / -1; }
-.drive-link {
+.ship-links > .ship-link:only-child,
+.ship-links > .ship-badge ~ .ship-link:only-of-type { grid-column: 1 / -1; }
+.ship-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,45 +187,104 @@ html.ship-images-off .ship-card .ship-images {
   font-weight: 600;
   transition: all 0.2s;
 }
-.drive-link:hover { background: var(--pink-d); color: var(--bg); }
+.ship-link:hover { background: var(--pink-d); color: var(--bg); }
 
-.ship-links--collapse { display: block; }
-.drive-details { border: 0; }
-.drive-details > summary {
+.ship-link--official {
+  border: 1px solid rgba(100, 200, 160, 0.35);
+  background: rgba(100, 200, 160, 0.12);
+  color: #a8e6cf;
+}
+.ship-link--official:hover {
+  background: rgba(100, 200, 160, 0.28);
+  color: var(--bg);
+}
+
+.ship-link--social {
+  background: rgba(184, 169, 154, 0.15);
+  color: var(--muted);
+  border: 1px solid rgba(184, 169, 154, 0.35);
+}
+.ship-link--social:hover {
+  background: rgba(244, 138, 50, 0.25);
+  color: var(--text);
+}
+
+.ship-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.ship-note cite {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ship-img--placeholder {
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* fan archive (Drive / MEGA) — collapsed by default */
+.ship-archive {
+  margin-top: 0.65rem;
+  border: 0;
+  padding: 0;
+}
+.ship-archive-summary {
   list-style: none;
   cursor: pointer;
-}
-.drive-details > summary::-webkit-details-marker { display: none; }
-.drive-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.4rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(220, 123, 179, 0.28);
+  border-radius: 12px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
   user-select: none;
 }
-.drive-summary:focus-visible {
+.ship-archive-summary::-webkit-details-marker { display: none; }
+.ship-archive-summary::after {
+  content: " ▼";
+  font-size: 0.75em;
+  opacity: 0.85;
+  margin-left: 0.35rem;
+}
+.ship-archive[open] .ship-archive-summary::after { content: " ▲"; }
+.ship-archive-summary:hover {
+  background: rgba(220, 123, 179, 0.12);
+  border-color: rgba(220, 123, 179, 0.45);
+  color: var(--text);
+}
+.ship-archive-summary:focus-visible {
   outline: 2px solid var(--pink);
   outline-offset: 2px;
 }
-.drive-summary::after {
-  content: " ▼";
-  font-size: 0.75em;
-  opacity: 0.8;
-  margin-left: 0.25rem;
+.ship-archive[open] .ship-archive-summary {
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 0;
+  border-bottom-color: transparent;
 }
-.drive-details[open] .drive-summary::after { content: " ▲"; }
-.drive-link-stack {
+.ship-archive:not([open]) .ship-archive-summary { border-radius: 12px; }
+
+.ship-archive-stack {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.6rem;
   border-radius: 0 0 12px 12px;
-  background: rgba(0,0,0,0.18);
-  border: 1px solid rgba(220,123,179,0.22);
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(220, 123, 179, 0.22);
   border-top: 0;
 }
-.drive-details[open] .drive-summary {
-  border-radius: 12px 12px 0 0;
-  margin-bottom: 0;
-}
-.drive-details:not([open]) .drive-summary { border-radius: 12px; }
 
 /* app */
 .highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; box-shadow: 0 0 0 1px rgba(244,138,50,0.22), 0 0 18px rgba(244,138,50,0.45), 0 0 36px rgba(220,123,179,0.28); }
@@ -247,5 +306,13 @@ html.ship-images-off .ship-card .ship-images {
 /* footer */
 footer { text-align: center; padding: 2rem; }
 footer p { margin: 0; font-size: 0.9rem; color: var(--muted); }
+footer .footer-note {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media (max-width: 600px) { .ship-grid { grid-template-columns: 1fr; } }
