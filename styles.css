@@ -169,6 +169,17 @@ html.ship-images-off .ship-card .ship-images {
 .ship-images { padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 16px 16px 0 0; min-height: 90px; }
 .ship-img { width: 100%; max-width: 110px; height: 75px; object-fit: cover; border-radius: 12px; }
 .ship-card .ship-images .ship-img:only-child { max-width: 100%; width: 100%; height: auto; aspect-ratio: 16/9; }
+/* Opt out of full-width :only-child hero — match other ships’ inset thumbnail */
+.ship-card .ship-images .ship-img.ship-img--thumb {
+  max-width: 110px;
+  width: 100%;
+  height: 75px;
+  aspect-ratio: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .ship-img-crop-right { object-position: 55% center; }
 .ship-content { padding: 1.25rem; }
 .ship-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin: 0 0 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
