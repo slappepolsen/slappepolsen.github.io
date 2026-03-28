@@ -166,14 +166,9 @@ html.ship-images-off .ship-card .ship-images {
 }
 
 .ship-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(220,123,179,0.2); border-color: var(--pink); }
-.ship-images { padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 16px 16px 0 0; min-height: 90px; overflow: hidden; }
+.ship-images { padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 16px 16px 0 0; min-height: 90px; }
 .ship-img { width: 100%; max-width: 110px; height: 75px; object-fit: cover; border-radius: 12px; }
 .ship-card .ship-images .ship-img:only-child { max-width: 100%; width: 100%; height: auto; aspect-ratio: 16/9; }
-/* Tighter framing for wide shots (scale + origin so faces read closer to other cards) */
-.ship-card .ship-images .ship-img.ship-img--zoom:only-child {
-  transform: scale(1.28);
-  transform-origin: 50% 42%;
-}
 .ship-img-crop-right { object-position: 55% center; }
 .ship-content { padding: 1.25rem; }
 .ship-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin: 0 0 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
