@@ -298,6 +298,17 @@ html.ship-images-off .ship-card .ship-images {
   border: 1px solid rgba(220, 123, 179, 0.22);
   border-top: 0;
 }
+.ship-archive-note {
+  margin: 0 0 0.15rem;
+  padding: 0 0.15rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--muted2);
+}
+.ship-archive-note strong {
+  color: var(--muted);
+  font-weight: 600;
+}
 
 /* app */
 .highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; box-shadow: 0 0 0 1px rgba(244,138,50,0.22), 0 0 18px rgba(244,138,50,0.45), 0 0 36px rgba(220,123,179,0.28); }
