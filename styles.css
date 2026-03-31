@@ -54,6 +54,22 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-size: var(--intro-text);
   line-height: 1.65;
 }
+.archive-stats {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0.85rem 0 0;
+  line-height: 1.65;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.archive-stats time { color: var(--text); font-weight: 500; }
+.archive-stats-strong {
+  font-weight: 600;
+  color: var(--light-orange);
+}
 .banner-note {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.88rem;
