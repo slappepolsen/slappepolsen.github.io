@@ -4,7 +4,7 @@
 :root {
   --red: #df4300; --red-d: #be3900;
   --orange: #f48a32; --orange-d: #cf752b;
-  --light-orange: #ffab68; --pink: #dc7bb3; --pink-d: #bb6998;
+  --pink: #dc7bb3; --pink-d: #bb6998;
   --purple: #c46ea1; --dark-pink: #b42075; --dark-pink-d: #991b63;
   --bg: #1f1a18; --card: #2a2420; --text: #f5ebe0; --muted: #b8a99a; --muted2: #8a7e72;
   --heading-section: 1.5rem;
@@ -61,20 +61,6 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-size: var(--intro-text);
   line-height: 1.65;
   width: 100%;
-}
-.archive-stats {
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 400;
-  font-size: 0.92rem;
-  color: var(--muted);
-  margin: 0.85rem 0 0;
-  line-height: 1.65;
-  max-width: 42rem;
-}
-.archive-stats time { color: var(--text); font-weight: 500; }
-.archive-stats-strong {
-  font-weight: 600;
-  color: var(--light-orange);
 }
 .banner-note {
   font-family: 'JetBrains Mono', monospace;
