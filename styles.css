@@ -315,43 +315,23 @@ html.ship-images-off .ship-card .ship-images {
   font-weight: 600;
 }
 
-/* loquinha */
-.loquinha-banner {
-  display: block;
-  max-width: 520px;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 2px solid rgba(220, 123, 179, 0.25);
-  box-shadow: 0 0 0 1px rgba(220, 123, 179, 0.15), 0 6px 18px rgba(0, 0, 0, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  line-height: 0;
-}
-.loquinha-banner:hover,
-.loquinha-banner:focus-visible {
-  transform: translateY(-2px);
-  border-color: rgba(220, 123, 179, 0.55);
-  box-shadow: 0 0 0 1px rgba(220, 123, 179, 0.25), 0 10px 24px rgba(0, 0, 0, 0.28);
-}
-.loquinha-banner-img {
-  display: block;
+/* loquinha card overrides */
+.ship-card .ship-images .ship-img.ship-img--banner {
+  max-width: 100%;
   width: 100%;
   height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 }
-.loquinha-cta { margin: 0 0 1rem; }
-.loquinha-link {
-  display: inline-block;
-  color: var(--orange);
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(244, 138, 50, 0.4);
-  transition: color 0.2s ease, border-color 0.2s ease;
+.ship-blurb {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--muted);
 }
-.loquinha-link:hover,
-.loquinha-link:focus-visible {
-  color: var(--orange-d, var(--orange));
-  border-bottom-color: rgba(244, 138, 50, 0.9);
-}
+.ship-blurb strong { color: var(--text); }
 
 /* app */
 .highlight-section .app-box { background: linear-gradient(135deg, var(--card) 0%, rgba(244,138,50,0.1) 100%); border: 2px solid var(--orange); border-radius: 20px; padding: 2rem; box-shadow: 0 0 0 1px rgba(244,138,50,0.22), 0 0 18px rgba(244,138,50,0.45), 0 0 36px rgba(220,123,179,0.28); }
