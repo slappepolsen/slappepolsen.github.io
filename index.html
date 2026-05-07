@@ -9,28 +9,16 @@
   <link rel="icon" href="/images/logo-v6_2.png?v=8" type="image/png" sizes="1024x1024">
   <link rel="apple-touch-icon" href="/images/logo-v6_2.png?v=8">
   
-  <link rel="stylesheet" href="styles.css?v=48">
+  <link rel="stylesheet" href="styles.css?v=50">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    (function () {
-      try {
-        if (localStorage.getItem('sp-archive-ship-images') === '0') {
-          document.documentElement.classList.add('ship-images-off');
-        }
-      } catch (e) {}
-    })();
-  </script>
 </head>
 <body>
   <!-- logo -->
   <header>
     <div class="hero-inner">
       <h1 class="site-banner">
-        <div class="logo-wrap">
-          <img src="/images/logo-v6_2.png" alt="SP - slappepolsen's archive" class="site-logo-img" width="1024" height="1024" decoding="async">
-        </div>
         <span class="archive-title">ARCHIVE</span>
       </h1>
       <p class="tagline">Archive of my subbed scenes, the app I made so you can do the same, and more!</p>
@@ -45,132 +33,11 @@
     <!-- ship cards -->
     <section id="ships" class="section">
       <h2>Ships</h2>
-      <p class="section-intro">Archiving of ships I’ve worked on as a fan. Each card lists <strong>where to watch officially</strong> first. Expand <strong>Show archive links</strong> for subbed clips. I’m not affiliated with any broadcaster.</p>
-      <div class="ship-privacy-bar" role="region" aria-label="Ship image visibility">
-        <label class="ship-privacy-toggle" for="toggle-ship-images">
-          <span class="ship-privacy-label">Show photos on ship cards</span>
-          <input type="checkbox" id="toggle-ship-images" class="ship-privacy-input" checked>
-          <span class="ship-privacy-switch" aria-hidden="true"></span>
-        </label>
-      </div>
+      <p class="section-intro">Archiving of ships I’ve worked on as a fan. <strong>Right now only Roxane x Sara</strong> has working archive links below; every other card is <strong>temporarily unavailable</strong> (hopefully back soon). Expand <strong>Show archive links</strong> for Drive folders. This site doesn’t host video files.</p>
       <div class="ship-grid">
         <article class="ship-card">
-          <div class="ship-images">
-            <img src="https://github.com/loquinhaAU/loquinhaAU.github.io/blob/main/media/banner.png?raw=true" alt="Loquinha AU's — archive of AU threads on Twitter" class="ship-img ship-img--banner" loading="lazy" decoding="async" onerror="this.style.display='none'">
-          </div>
-          <div class="ship-content">
-            <h3>Loquinha AU's <span class="ship-meta">🇧🇷 (Twitter/X)</span></h3>
-            <p class="ship-blurb">A small archive of <strong>Loquinha AU threads from Twitter/X</strong> collected in one place so they don’t get buried in the timeline.</p>
-            <div class="ship-links">
-              <a href="https://loquinhaAU.github.io" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">loquinhaAU.github.io · archive</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/lorena-juquinha-a.png" alt="Lorena x Juquinha" class="ship-img" onerror="this.style.display='none'">
-          </div>
-          <div class="ship-content">
-            <h3>Lorena x Juquinha <span class="ship-meta">🇧🇷 (2025-2026)</span></h3>
-            <div class="ship-links">
-              <span class="ship-badge">NEW</span>
-              <a href="https://globoplay.globo.com/v/14030043/" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">Globoplay · stream</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <p class="ship-archive-note">Three <strong>mirrors</strong> are the same subbed clips in separate Google Drive folders. If previews or playback hit limits in one folder, open another mirror (the files are duplicates, not different episodes).</p>
-                <a href="https://drive.google.com/drive/folders/1dXGSx-PknouHShuU2YHpyfWyF_7QKEOf?usp=sharing" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Mirror 1</a>
-                <a href="https://drive.google.com/drive/folders/1cL5_IVZBL6x7tfIjasBOBLHscN8GE0M-?usp=sharing" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Mirror 2</a>
-                <a href="https://drive.google.com/drive/folders/1qS47rFfSBfTeH6iE4aTckSeXzKaqgVzb?usp=sharing" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Mirror 3</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/merel-lynn.png" alt="Lynn en Merel" class="ship-img" onerror="this.style.display='none'">
-          </div>
-          <div class="ship-content">
-            <h3>Lynn en Merel <span class="ship-meta">🇳🇱 (2022)</span></h3>
-            <div class="ship-links">
-              <span class="ship-badge">NEW</span>
-              <a href="https://v2.videoland.com/goede-tijden-slechte-tijden-p_61" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">Videoland · stream</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <a href="https://drive.google.com/drive/folders/1RRWy4MaoSENPTz7QhD-xjDiULBvlFqBI?usp=sharing" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Google Drive</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/lea-apolline-a.jpg" alt="Léa x Apolline" class="ship-img" onerror="this.style.display='none'">
-          </div>
-          <div class="ship-content">
-            <h3>Léa x Apolline <span class="ship-meta">🇫🇷 (2026-ongoing)</span></h3>
-            <div class="ship-links">
-              <a href="https://www.tf1.fr/tf1/plus-belle-la-vie/videos" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">TF1+ · replay</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <a href="https://drive.google.com/drive/folders/1MuvexrOhOiXcAwssu8mx_FdeSqBE9ZDk?usp=drive_link" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Google Drive</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/juliette-mathilda-a.jpg" alt="Juliette und Mathilda" class="ship-img" onerror="this.style.display='none'">
-          </div>
-          <div class="ship-content">
-            <h3>Juliette x Mathilda <span class="ship-meta">🇩🇪 (2025-2026)</span></h3>
-            <div class="ship-links">
-              <a href="https://www.joyn.de/serien/die-cooking-academy" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">Joyn · stream</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <a href="https://drive.google.com/drive/folders/1BVjwZ5kk0U0KdSgSIFUlBOPeFzB6vy5g?usp=drive_link" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Google Drive</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/flora-celina.avif" alt="Flora x Luna, Flora x Celina" class="ship-img" onerror="this.style.display='none'">
-          </div>
-          <div class="ship-content">
-            <h3>Flora x Luna, Flora x Celina <span class="ship-meta">🇧🇷 (2025-ongoing)</span></h3>
-            <div class="ship-links">
-              <a href="https://globoplay.globo.com/vermelho-sangue/t/J8zVqKc6wh/" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">Globoplay</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <a href="https://drive.google.com/drive/folders/1eZ3J15ir6WNZtZllkCoYGjJAujFy9XCg?usp=drive_link" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Google Drive</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/roxane-sara.jpg" alt="Roxane x Sara" class="ship-img" onerror="this.style.display='none'">
-          </div>
           <div class="ship-content">
             <h3>Roxane x Sara <span class="ship-meta">🇫🇷 (2020–ongoing)</span></h3>
-            <div class="ship-links">
-              <a href="https://www.tf1.fr/tf1/demain-nous-appartient/videos" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">TF1+ · replay</a>
-            </div>
             <details class="ship-archive">
               <summary class="ship-archive-summary">Show archive links</summary>
               <div class="ship-archive-stack" role="group" aria-label="Google Drive folders by episode range">
@@ -184,58 +51,59 @@
           </div>
         </article>
 
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/natalia-majka-a.jpg" alt="Natalia and Majka" class="ship-img" onerror="this.style.display='none'">
+        <article class="ship-card ship-card--unavailable">
+          <div class="ship-content">
+            <h3>Lorena x Juquinha <span class="ship-meta">🇧🇷 (2025-2026)</span></h3>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
           </div>
+        </article>
+
+        <article class="ship-card ship-card--unavailable">
+          <div class="ship-content">
+            <h3>Lynn en Merel <span class="ship-meta">🇳🇱 (2022)</span></h3>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
+          </div>
+        </article>
+
+        <article class="ship-card ship-card--unavailable">
+          <div class="ship-content">
+            <h3>Léa x Apolline <span class="ship-meta">🇫🇷 (2026-ongoing)</span></h3>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
+          </div>
+        </article>
+
+        <article class="ship-card ship-card--unavailable">
+          <div class="ship-content">
+            <h3>Juliette x Mathilda <span class="ship-meta">🇩🇪 (2025-2026)</span></h3>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
+          </div>
+        </article>
+
+        <article class="ship-card ship-card--unavailable">
+          <div class="ship-content">
+            <h3>Flora x Luna, Flora x Celina <span class="ship-meta">🇧🇷 (2025-ongoing)</span></h3>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
+          </div>
+        </article>
+
+        <article class="ship-card ship-card--unavailable">
           <div class="ship-content">
             <h3>Natalia x Majka <span class="ship-meta">🇵🇱(2018–2022)</span></h3>
-            <div class="ship-links">
-              <a href="https://player.pl/playerplus/seriale-online/kontrola-odcinki,32955" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">Player.pl</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <a href="https://drive.google.com/drive/folders/1tId06AF9KQeIo42s2VfLt4v-VnXCMeME?usp=sharing" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Google Drive</a>
-              </div>
-            </details>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
           </div>
         </article>
 
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/ship-placeholder.svg" alt="" class="ship-img ship-img--placeholder" width="160" height="90" decoding="async">
-          </div>
+        <article class="ship-card ship-card--unavailable">
           <div class="ship-content">
             <h3>Jasmien x Victorine <span class="ship-meta">🇧🇪 (2024–2025)</span></h3>
-            <div class="ship-links">
-              <a href="https://www.vtmgo.be/vtmgo/milo~e38295bf-280c-43b5-a1d1-4e41904a367f" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">VTM GO · Milo</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="Subbed clips archive">
-                <a href="https://drive.google.com/drive/folders/1nrF7_iJtTFs4cxCz68pfp3gTjmLeyBkq" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">Google Drive</a>
-              </div>
-            </details>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
           </div>
         </article>
 
-        <article class="ship-card">
-          <div class="ship-images">
-            <img src="/images/carla-berenice-a.webp" alt="Carla x Bérénice" class="ship-img" onerror="this.style.display='none'">
-          </div>
+        <article class="ship-card ship-card--unavailable">
           <div class="ship-content">
             <h3>Carla x Bérénice <span class="ship-meta">🇫🇷 (2023–ongoing)</span></h3>
-            <div class="ship-links">
-              <a href="https://www.tf1.fr/tf1/ici-tout-commence/videos" class="ship-link ship-link--official" target="_blank" rel="noopener noreferrer">TF1+ · replay</a>
-            </div>
-            <details class="ship-archive">
-              <summary class="ship-archive-summary">Show archive links</summary>
-              <div class="ship-archive-stack" role="group" aria-label="MEGA and fan updates">
-                <a href="https://mega.nz/folder/c7dG3ZqA#QUT_Y7oYmTsNNB8izIj5YQ" class="ship-link ship-link--archive" target="_blank" rel="noopener noreferrer">MEGA · pre-dating era (739–843)</a>
-                <a href="https://x.com/itsoiise" class="ship-link ship-link--social" target="_blank" rel="noopener noreferrer">@itsoiise · dating era (844+)</a>
-              </div>
-            </details>
+            <p class="ship-unavailable">Currently unavailable, hopefully back soon.</p>
           </div>
         </article>
 
@@ -267,7 +135,7 @@
       <h2>About me</h2>
       <div class="about-box">
         <p>I'm simply a nerd from the Netherlands 🇳🇱 who enjoys using her skills for fan projects and WLW storytelling.</p>
-        <p>Official watch links are listed first on each card; my subbed clips (Drive / MEGA) sit behind <strong>Show archive links</strong>. This site doesn’t host video files.</p>
+        <p>When an archive is available, subbed clips (e.g. on Drive) sit behind <strong>Show archive links</strong>. This site doesn’t host video files.</p>
         <p>Thank you for being here, and I hope you find something you enjoy.</p>
       </div>
     </section>
@@ -281,32 +149,10 @@
     </section>
   </main>
 
-
-  <script>
-    (function () {
-      var KEY = 'sp-archive-ship-images';
-      var root = document.documentElement;
-      var input = document.getElementById('toggle-ship-images');
-      if (!input) return;
-      function setImagesVisible(visible) {
-        root.classList.toggle('ship-images-off', !visible);
-        input.checked = visible;
-      }
-      var stored = localStorage.getItem(KEY);
-      if (stored !== null) {
-        setImagesVisible(stored === '1');
-      }
-      input.addEventListener('change', function () {
-        var on = input.checked;
-        setImagesVisible(on);
-        localStorage.setItem(KEY, on ? '1' : '0');
-      });
-    })();
-  </script>
   <!-- footer -->
   <footer>
     <p>Built with ❤️ · Hosted on GitHub Pages</p>
-    <p class="footer-note">Fan project · No affiliation with broadcasters or streamers · Use official services to watch.</p>
+    <p class="footer-note">Fan project · Subtitles archive.</p>
   </footer>
 </body>
 </html>
