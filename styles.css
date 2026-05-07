@@ -28,6 +28,16 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   gap: 0.25rem;
   line-height: 1.1;
 }
+.logo-wrap {
+  max-width: min(168px, 38vw);
+  flex-shrink: 0;
+  line-height: 0;
+}
+.site-logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .archive-title {
   font-family: 'JetBrains Mono', monospace;
   font-size: var(--heading-hero);
