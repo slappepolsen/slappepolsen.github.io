@@ -212,17 +212,11 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: var(--heading-section)
 /* more */
 .more-box { background: transparent; border: 2px dashed rgba(184,169,154,0.4); border-radius: 20px; padding: 2rem; }
 .more-box p { color: var(--muted); margin: 0; font-style: italic; }
+.more-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; }
 
 /* footer */
 footer { text-align: center; padding: 2rem; }
 footer p { margin: 0; font-size: 0.9rem; color: var(--muted); }
-footer .footer-note {
-  margin-top: 0.5rem;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  max-width: 36rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+footer .footer-note { margin-top: 0.5rem; font-size: 0.78rem; line-height: 1.45; max-width: 36rem; margin-left: auto; margin-right: auto; }
 
 @media (max-width: 600px) { .ship-grid { grid-template-columns: 1fr; } }
