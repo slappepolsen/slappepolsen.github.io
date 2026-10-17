@@ -77,13 +77,17 @@ body { margin: 0; font-family: 'JetBrains Mono', monospace; background: var(--bg
   font-size: 0.92rem;
   line-height: 1.6;
 }
-.page-note a {
+.page-note a,
+.section-intro a,
+.more-box p a {
   color: var(--pink);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
-.page-note a:hover {
+.page-note a:hover,
+.section-intro a:hover,
+.more-box p a:hover {
   color: var(--orange);
 }
 
