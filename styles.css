@@ -102,6 +102,17 @@ header { padding: 1.25rem var(--page-pad-inline) 0.5rem; }
 main { max-width: var(--page-max); margin: 0 auto; padding: 1.25rem var(--page-pad-inline) 4rem; }
 h2 { font-family: 'JetBrains Mono', monospace; font-size: var(--heading-section); color: var(--orange); margin-bottom: 0.75rem; }
 .section-intro { font-size: var(--intro-text); color: var(--muted); margin-bottom: 1.5rem; line-height: 1.65; }
+.section-intro a,
+.more-box a:not(.app-link) {
+  color: var(--pink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.section-intro a:hover,
+.more-box a:not(.app-link):hover {
+  color: var(--orange);
+}
 .section { margin-bottom: 2.5rem; }
 
 /* pairing cards */
@@ -118,6 +129,7 @@ h2 { font-family: 'JetBrains Mono', monospace; font-size: var(--heading-section)
 .ship-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(220,123,179,0.2); border-color: var(--pink); }
 .ship-content { padding: 1.25rem; }
 .ship-content h3 { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin: 0 0 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.ship-content > .ship-link { margin-top: 0.65rem; }
 .ship-meta { color: var(--muted); font-size: 0.85rem; }
 .ship-link {
   display: flex;
